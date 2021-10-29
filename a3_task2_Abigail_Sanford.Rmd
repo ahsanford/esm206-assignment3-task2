@@ -265,6 +265,7 @@ gasol_hook_month <- gasol_hookshots %>%
   group_by(type, month_clear) %>% 
   summarize(points_per_month = n())
 
+gasol_hook_month
 ```
 
 ### 4. `dplyr::case_when()`

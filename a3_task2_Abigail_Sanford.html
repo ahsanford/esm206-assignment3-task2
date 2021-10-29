@@ -393,7 +393,20 @@ gasol_hookshots &lt;- lakers %&gt;%
 
 gasol_hook_month &lt;- gasol_hookshots %&gt;% 
   group_by(type, month_clear) %&gt;% 
-  summarize(points_per_month = n())</code></pre>
+  summarize(points_per_month = n())
+
+gasol_hook_month</code></pre>
+<pre><code>## # A tibble: 7 x 3
+## # Groups:   type [1]
+##   type  month_clear points_per_month
+##   &lt;chr&gt;       &lt;dbl&gt;            &lt;int&gt;
+## 1 hook            1               19
+## 2 hook            2               16
+## 3 hook            3               20
+## 4 hook            4               14
+## 5 hook           10                2
+## 6 hook           11               14
+## 7 hook           12               10</code></pre>
 </div>
 </div>
 <div id="dplyrcase_when" class="section level3">
